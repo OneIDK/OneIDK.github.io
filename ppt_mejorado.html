@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            (Álgebra) Piedra, papel o tijera
+        </title>
+        <script>
+            // 1 es piedra, 2 es papel, 3 es tijera
+            let jugador = 0
+            let pc = Math.floor(Math.random() * 10)
+            jugador = prompt("Elige: 1 para Piedra, 2 para papel, 3 para tijera =>")
+            if(jugador == 1) {
+                alert("Elegiste 🪨")
+            } else if(jugador == 2) {
+                alert("Elegiste 📄")
+            } else if(jugador == 3){
+                alert("Elegiste ✂️")
+            } else {
+                alert("Elegiste PERDER")
+            }
+            pc %= 3
+            if(pc == 0) {
+                alert("PC eligió 🪨")
+            } else if(pc == 1) {
+                alert("PC eligió 📄")
+            } else if(pc == 2){
+                alert("PC eligió ✂️")
+            }
+            // COMBATE 
+            if(jugador - pc == 1) {
+                alert("EMPATE")
+            } else if ((jugador - pc) == -1) {
+                alert("GANASTE")
+            } else if ((jugador - pc) == 2) {
+                alert("GANASTE")
+            } else {
+                alert("PERDISTE")
+            }
+        </script>
+    </head>
+    <body>
+        <h1>
+            Piedra, papel o tijera
+        </h1>
+    </body>
+</html>
