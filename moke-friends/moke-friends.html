@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKE-FRIENDS!</title>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <h1>MOKE-FRIENDS! 🍆🍌🥒</h1>
+
+    <section id="seleccionar-personaje">
+        <h2>Elige un personaje:</h2>
+        <p>
+            <label for="samu">Samillo el pillo alias "Samillo1270"</label>
+            <input type="radio" name="personaje" id="samu" />
+            <img src="img/samu.jpg" alt="HTML5 Logo" width="100" height="100" id="samu" />
+
+            <label for="fénix">José Feliciano alias "Fenixrex32002"</label>
+            <input type="radio" name="personaje" id="fénix" />
+            <img src="img/fénix.jpg" alt="HTML5 Logo" width="100" height="100" id="fénix" />
+
+            <label for="check">Peter Checkpoint alias "Checonmi"</label>
+            <input type="radio" name="personaje" id="check" />
+            <img src="img/check.jpg" alt="HTML5 Logo" width="100" height="100" id="check" />
+
+            <label for="yo">Potter alias "Julian pro"</label>
+            <input type="radio" name="personaje" id="yo" />
+            <img src="img/yo.jpg" alt="HTML5 Logo" width="100" height="100" id="yo" />
+
+            <br><br>
+            <button id="boton-personaje">Seleccionar</button>
+        </p>
+    </section>
+
+    <section id="seleccionar-ataque">
+        <h2>Elige un ataque:</h2>
+        <p>
+            El personaje del Jugador <span id="pjJugador"></span> tiene <span id="vidas-jugador">3</span> vidas <br>
+            El personaje del CPU <span id="pjCPU"></span> tiene <span id="vidas-cpu">3</span> vidas <br>
+        </p>
+        <p>
+            <button id="boton-chupapija">Ataque Chupapija 🍆</button>
+            <button id="boton-trolo">Defensa trola 🍌</button>
+            <button id="boton-pickle">Pickle rick 🥒</button>
+        </p>
+    </section>
+
+    <section id="mensajes">
+    </section>
+
+    <section id="reiniciar">
+        <p>
+            Volver a jugar? <br>
+            <button id="boton-reiniciar">Reiniciar</button>
+        </p>
+    </section>
+</body>
+</html>
