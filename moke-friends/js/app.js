@@ -35,7 +35,7 @@ function seleccionarPjJugador() {
     let inputSamu = document.getElementById('samu')
     let inputFénix = document.getElementById('fénix')
     let inputCheck = document.getElementById('check')
-    let inputJJ = document.getElementById('jj')
+    let inputJJ = document.getElementById('yo')
 
     let spanPjJugador = document.getElementById('pjJugador')
     if (inputSamu.checked) {
